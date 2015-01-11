@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/main_bg" >
+   <RelativeLayout 
+       android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="4"
+        android:id="@+id/rootView"
+        android:layout_margin="30sp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dream"
+            android:id="@+id/dreamImageShow"
+             />
+
+        <TextView
+            android:id="@+id/showDreamOnPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="23dp"
+            android:text="This is my dream"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+   </RelativeLayout>
+   <LinearLayout 
+       android:layout_height="0dp"
+       android:layout_width="fill_parent"
+       android:layout_weight="3"
+       android:orientation="horizontal"
+       android:weightSum="2"
+        >
+
+       		<RelativeLayout
+       		    android:layout_width="0dp"
+       		    android:layout_height="fill_parent"
+       		    android:layout_weight="1" >
+
+       		    <ImageButton
+       		        android:id="@+id/uploadPhotoBtn"
+       		        android:layout_width="wrap_content"
+       		        android:layout_height="wrap_content"
+       		        android:layout_alignParentTop="true"
+       		        android:layout_centerHorizontal="true"
+       		        android:layout_marginTop="24dp"
+       		        android:background="@null"
+       		        android:src="@drawable/camera_icon" />
+
+       		    <TextView
+       		        android:id="@+id/textView1"
+       		        android:layout_width="wrap_content"
+       		        android:layout_height="wrap_content"
+       		        android:layout_below="@+id/uploadPhotoBtn"
+       		        android:layout_centerHorizontal="true"
+       		        android:layout_marginTop="10dp"
+       		        android:text="Upload your photo"
+       		        android:textColor="@android:color/background_light" />
+
+       		</RelativeLayout>
+       		<RelativeLayout
+       		    android:layout_width="0dp"
+       		    android:layout_height="fill_parent"
+       		    android:layout_weight="1" >
+
+       		    <ImageButton
+       		        android:id="@+id/changeFontButton"
+       		        android:layout_width="wrap_content"
+       		        android:layout_height="wrap_content"
+       		        android:layout_alignParentTop="true"
+       		        android:layout_centerHorizontal="true"
+       		        android:layout_marginTop="24dp"
+       		        android:background="@null"
+       		        android:src="@drawable/fonts_icon" />
+
+       		    <TextView
+       		        android:id="@+id/changeFontText"
+       		        android:layout_width="wrap_content"
+       		        android:layout_height="wrap_content"
+       		        android:layout_below="@+id/changeFontButton"
+       		        android:layout_centerHorizontal="true"
+       		        android:layout_marginTop="10dp"
+       		        android:text="Change the fonts"
+       		        android:textColor="@android:color/background_light" />
+
+       		</RelativeLayout>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_height="0dp"
+       android:layout_width="fill_parent"
+       android:orientation="vertical"
+       android:layout_weight="3" >
+
+       <ImageButton
+           android:id="@+id/goAheadBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/go_ahead_btn"
+           android:layout_gravity="center_horizontal"
+           android:background="@null"
+            />
+       
+   </LinearLayout>
+</LinearLayout>

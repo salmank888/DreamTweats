@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+<ImageButton 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:src="@drawable/lol_type_pressed"
+    android:background="@null"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/gridImage"/>
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Scary"
+    android:textColor="@android:color/background_light"
+    android:layout_gravity="center_horizontal"
+    android:textSize="15sp"
+    android:id="@+id/gridText"
+    />
+</LinearLayout>

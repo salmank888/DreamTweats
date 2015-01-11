@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+ 
+    android:background="@drawable/main_bg" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bubble_1"
+        android:text="Hi. How are you"
+        android:layout_margin="10sp"
+        android:gravity="center" />
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="70sp"
+        android:orientation="horizontal">
+        <TextView 
+            android:text="Tue,"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/background_light"
+            />
+        <TextView 
+            android:text="Sep 6,"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/background_light"
+            />
+        <TextView 
+            android:text="1:26 PM,"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/background_light"
+            />
+    </LinearLayout>
+
+</LinearLayout>

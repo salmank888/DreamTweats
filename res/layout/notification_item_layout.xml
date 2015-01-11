@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+  <LinearLayout 
+      android:layout_height="wrap_content"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      >
+      <ImageView 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:src="@drawable/user1"
+          android:layout_gravity="center"
+          android:id="@+id/followerImage"
+          />
+      
+  </LinearLayout>  
+  <LinearLayout 
+      android:layout_height="wrap_content"
+      android:layout_width="0dp"
+      android:layout_weight="9"
+      android:layout_marginLeft="10sp"
+      android:orientation="vertical"
+      >
+      	<LinearLayout 
+      	    android:layout_height="wrap_content"
+      	    android:layout_width="wrap_content"
+      	    android:orientation="horizontal"
+      	    android:layout_marginTop="20sp">
+      	    	<TextView 
+      	    	    android:layout_height="wrap_content"
+      	    	    android:layout_width="wrap_content"
+      	    	    android:text="user1"
+      	    	    android:textColor="@android:color/background_light"
+      	    	    android:gravity="center_vertical"
+      	    	    android:id="@+id/followerName"
+      	    	    />
+      	    	<TextView 
+      	    	    android:layout_height="wrap_content"
+      	    	    android:layout_width="wrap_content"
+      	    	    android:text="followed You"
+      	    	    android:textColor="@android:color/background_light"
+      	    	    android:gravity="center_vertical"
+      	    	    android:textSize="10sp"
+      	    	    android:id="@+id/followrAction"
+      	    	    android:layout_marginLeft="2sp"
+      	    	    />
+      	    	
+      	</LinearLayout>
+      <RelativeLayout 
+      	    	    android:layout_height="wrap_content"
+      	    	    android:layout_width="wrap_content"
+      	    	    android:layout_marginTop="2sp">
+      	    	<ImageView 
+      	    	    android:layout_height="wrap_content"
+      	    	    android:layout_width="wrap_content"
+      	    	    android:id="@+id/followerDreamImage"
+      	    	    />
+          
+      </RelativeLayout>
+      <LinearLayout 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="2sp">
+      	    	<ImageView 
+      	    	    android:layout_height="wrap_content"
+      	    	    android:layout_width="wrap_content"
+      	    	    android:src="@drawable/clock_icon"
+      	    	    android:layout_gravity="center_vertical"/>
+      	    	<TextView
+      	    	    android:layout_height="wrap_content"
+      	    	    android:layout_width="wrap_content"
+      	    	    android:text="1 min ago"
+      	    	    android:layout_marginLeft="5sp"
+      	    	    android:textColor="@android:color/background_light"
+      	    	    android:textSize="10sp"
+      	    	    android:id="@+id/followerTime"/>
+          
+      </LinearLayout>
+  </LinearLayout>  
+
+</LinearLayout>
